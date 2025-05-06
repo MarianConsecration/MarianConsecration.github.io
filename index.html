@@ -7,10 +7,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MarianConsecration</title>
+
+    <!-- Dynamically set the base href based on environment -->
     <base href="/" />
+    <script>
+        // Check if the app is running in a local environment or production
+        const isProduction = window.location.hostname === "marianconsecration.github.io";
+        document.querySelector("base").setAttribute("href", isProduction ? "/marianconsecration/" : "/");
+    </script>
+
     <!-- Add this script FIRST -->
     <script>
-        // Initialize both theme and language
         document.addEventListener('DOMContentLoaded', () => {
             const savedTheme = localStorage.getItem('theme') || 'light';
             const savedLang = localStorage.getItem('language') || 'modern';
@@ -35,7 +42,6 @@
     <link href="/manifest.webmanifest" rel="manifest" />
     <link rel="stylesheet" href="/_content/Radzen.Blazor/css/material.css" />
     <link rel="stylesheet" href="/_content/Microsoft.Fast.Components.FluentUI/css/fluent.css" />
-
 </head>
 <body>
     <div id="app">
