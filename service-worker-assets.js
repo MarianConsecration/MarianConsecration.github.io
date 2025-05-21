@@ -1,8 +1,8 @@
 self.assetsManifest = {
-  "version": "sYu8wyfO",
+  "version": "rMIeys2o",
   "assets": [
     {
-      "hash": "sha256-GCyN9rdDJYYwnVFDcTKLPJT1zYcK1gBKYZ5K/vZcPk0=",
+      "hash": "sha256-NnqyxteUMzzuY84uhhQW1/XaGLiryEzPkPcXjrsckS8=",
       "url": "MarianConsecration.styles.css"
     },
     {
@@ -1286,16 +1286,16 @@ self.assetsManifest = {
       "url": "_framework/Blazored.LocalStorage.12n6dz54qr.wasm"
     },
     {
-      "hash": "sha256-H2zRdcukhsy/LQtlkgmHfzdrll/XBPAawdCav/sTaCc=",
-      "url": "_framework/MarianConsecration.tp09cv8p2f.wasm"
+      "hash": "sha256-Yf4m0M84ow41ifojzmt6XPbsDrIMHZM+tJ2piRI9D+U=",
+      "url": "_framework/MarianConsecration.dluuwm5yz4.wasm"
     },
     {
       "hash": "sha256-dEOU93t+iN5BJuV4yIlcviNKfW2g6aOag0LRHlgSG3I=",
       "url": "_framework/Microsoft.AspNetCore.Components.Forms.kgikxqovw4.wasm"
     },
     {
-      "hash": "sha256-MLA4ySNpbWo6Ocn7WaeDmW8nEDahJYo2R9cn/VZo9aA=",
-      "url": "_framework/Microsoft.AspNetCore.Components.Web.0sg1dmmcq4.wasm"
+      "hash": "sha256-KBmOf9TqmCUIye6klmJhLPx1nufQdaDH8VX2AuSG8Xo=",
+      "url": "_framework/Microsoft.AspNetCore.Components.Web.8sfhvwn1u3.wasm"
     },
     {
       "hash": "sha256-dsdFYwfEUSjVJxsIHaj1+ZkocPDbbJRjTxbMYw4iCLw=",
@@ -1598,7 +1598,7 @@ self.assetsManifest = {
       "url": "_framework/System.f0fr8djds0.wasm"
     },
     {
-      "hash": "sha256-J0K7vHZ96Ia58Rtd7ck/j99O9ECmpNRKmHAozDPNVbU=",
+      "hash": "sha256-ko0dRtmmPapExjCf4Qq7N34znixkRQmfo1+YBEo1AOg=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -1742,7 +1742,7 @@ self.assetsManifest = {
       "url": "apple-touch-icon.png"
     },
     {
-      "hash": "sha256-/VVCL1ASYQHVMCSckioa/I0KLA8xkgiprDhG5FKTJPI=",
+      "hash": "sha256-iLegTWzBHu5J7JHRkpKDTVvC0Gcf1sNaRJFW6iVtvfQ=",
       "url": "css/app.css"
     },
     {
@@ -1758,7 +1758,7 @@ self.assetsManifest = {
       "url": "favicon.svg"
     },
     {
-      "hash": "sha256-5adbBGpppDvvYl8xDOV29ZZ23CzT5PPL83VqA+aKgwA=",
+      "hash": "sha256-mt0bJqzTglOOVHeVirGLoqeC57oHM4JS7ZJ+GJDfsbI=",
       "url": "index.html"
     },
     {

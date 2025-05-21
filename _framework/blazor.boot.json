@@ -1,13 +1,13 @@
 {
   "mainAssemblyName": "MarianConsecration",
   "resources": {
-    "hash": "sha256-KJbX7/TznEf8WdkLVFICz4v+2VxiOkjkew2TGHyjEIw=",
+    "hash": "sha256-emy3M2Ghdt6dyQHrK9IgH0f0aUPh/vy0j4WhPt/YDYk=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
-      "MarianConsecration.tp09cv8p2f.wasm": "MarianConsecration.wasm",
+      "MarianConsecration.dluuwm5yz4.wasm": "MarianConsecration.wasm",
       "Microsoft.AspNetCore.Components.Forms.kgikxqovw4.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.zmp6xn0r6h.wasm": "Microsoft.AspNetCore.Components.wasm",
-      "Microsoft.AspNetCore.Components.Web.0sg1dmmcq4.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
+      "Microsoft.AspNetCore.Components.Web.8sfhvwn1u3.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.qgnnqmrpa4.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
       "Microsoft.CodeAnalysis.CSharp.p31rc0goqn.wasm": "Microsoft.CodeAnalysis.CSharp.wasm",
       "Microsoft.CodeAnalysis.ux1aktmc0y.wasm": "Microsoft.CodeAnalysis.wasm",
@@ -136,10 +136,10 @@
     },
     "assembly": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
-      "MarianConsecration.tp09cv8p2f.wasm": "sha256-H2zRdcukhsy/LQtlkgmHfzdrll/XBPAawdCav/sTaCc=",
+      "MarianConsecration.dluuwm5yz4.wasm": "sha256-Yf4m0M84ow41ifojzmt6XPbsDrIMHZM+tJ2piRI9D+U=",
       "Microsoft.AspNetCore.Components.Forms.kgikxqovw4.wasm": "sha256-dEOU93t+iN5BJuV4yIlcviNKfW2g6aOag0LRHlgSG3I=",
       "Microsoft.AspNetCore.Components.zmp6xn0r6h.wasm": "sha256-SwQCFYdNOO4J5+2/Q40DF/0WOeYesaus9jLacBd1whs=",
-      "Microsoft.AspNetCore.Components.Web.0sg1dmmcq4.wasm": "sha256-MLA4ySNpbWo6Ocn7WaeDmW8nEDahJYo2R9cn/VZo9aA=",
+      "Microsoft.AspNetCore.Components.Web.8sfhvwn1u3.wasm": "sha256-KBmOf9TqmCUIye6klmJhLPx1nufQdaDH8VX2AuSG8Xo=",
       "Microsoft.AspNetCore.Components.WebAssembly.qgnnqmrpa4.wasm": "sha256-dsdFYwfEUSjVJxsIHaj1+ZkocPDbbJRjTxbMYw4iCLw=",
       "Microsoft.CodeAnalysis.CSharp.p31rc0goqn.wasm": "sha256-VcpjgiVQGVhlsFFL+GzVh/tl1ycxkiTzhb3zMyKI0Yg=",
       "Microsoft.CodeAnalysis.ux1aktmc0y.wasm": "sha256-UrCKIA7ySpcVuJFCzqzHYPujBSMtSeyQCqfCmliSttY=",
