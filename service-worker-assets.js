@@ -1,8 +1,8 @@
 self.assetsManifest = {
-  "version": "5+RIUpab",
+  "version": "mcqMSs6N",
   "assets": [
     {
-      "hash": "sha256-NnqyxteUMzzuY84uhhQW1/XaGLiryEzPkPcXjrsckS8=",
+      "hash": "sha256-+CSmwKRYkaNDI0bTREUm8BagPUok1VW7ERFvN7PCZhs=",
       "url": "MarianConsecration.styles.css"
     },
     {
@@ -1286,8 +1286,8 @@ self.assetsManifest = {
       "url": "_framework/Blazored.LocalStorage.12n6dz54qr.wasm"
     },
     {
-      "hash": "sha256-nr5QK1mLiU2/IytCuK/wZ5MwI4xV+jJ3ArmBrNKt7YM=",
-      "url": "_framework/MarianConsecration.mb0bb0wij6.wasm"
+      "hash": "sha256-YHs9bwzdMc8yJubqQRstKnWMJh9u+/Xp2EF+iuH+d1U=",
+      "url": "_framework/MarianConsecration.o678dinmrz.wasm"
     },
     {
       "hash": "sha256-dEOU93t+iN5BJuV4yIlcviNKfW2g6aOag0LRHlgSG3I=",
@@ -1598,7 +1598,7 @@ self.assetsManifest = {
       "url": "_framework/System.f0fr8djds0.wasm"
     },
     {
-      "hash": "sha256-MkXiDZxD87Zjk4u6rY1LYZcE8sPzIn22nHORg3pcc+E=",
+      "hash": "sha256-597cL9Q8cHASc0vnOWfw8/k2fcF8NXHzmXkVT6J9grY=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -1742,7 +1742,7 @@ self.assetsManifest = {
       "url": "apple-touch-icon.png"
     },
     {
-      "hash": "sha256-iLegTWzBHu5J7JHRkpKDTVvC0Gcf1sNaRJFW6iVtvfQ=",
+      "hash": "sha256-z8V/kP0rvzS04l0G6INJ+GAVN7iBHIgGx0PpuWm5o2g=",
       "url": "css/app.css"
     },
     {
@@ -1758,7 +1758,7 @@ self.assetsManifest = {
       "url": "favicon.svg"
     },
     {
-      "hash": "sha256-VYwmA6eD3yfMLiXJgmfmDBhRbe67uIRvKy5HXLoVqXs=",
+      "hash": "sha256-Dmu4SJnDwX7TsqV0h3AYwO/7CxgDPlfTignsGMNLiRo=",
       "url": "index.html"
     },
     {
@@ -1938,7 +1938,7 @@ self.assetsManifest = {
       "url": "lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "hash": "sha256-na+LgG8FyKu9d3ABuTd/uBH95snHB5xBAHnBlUpzIWk=",
+      "hash": "sha256-7YL+GAK3S6408atLlg/Mjrpl5NTuKX0jNq4DcdhP8nI=",
       "url": "manifest.webmanifest"
     },
     {
