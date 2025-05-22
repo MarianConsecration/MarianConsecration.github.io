@@ -1,6 +1,10 @@
 self.assetsManifest = {
-  "version": "mcqMSs6N",
+  "version": "oT3dOqzm",
   "assets": [
+    {
+      "hash": "sha256-W9V9pFwBfjD72AO7G4QxA9dI3uohxr8JNR+MgBBjZvg=",
+      "url": "404.html"
+    },
     {
       "hash": "sha256-+CSmwKRYkaNDI0bTREUm8BagPUok1VW7ERFvN7PCZhs=",
       "url": "MarianConsecration.styles.css"
