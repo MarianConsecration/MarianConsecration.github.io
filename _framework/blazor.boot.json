@@ -1,10 +1,10 @@
 {
   "mainAssemblyName": "MarianConsecration",
   "resources": {
-    "hash": "sha256-Od4xrALvnxPedqfCpaX+ReYCQ8/ZxjdFa29hgGgvWio=",
+    "hash": "sha256-xH449kGAxIQbrsXSobv1DW6FmtcrEzTaq1RUg9Q0Oa8=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
-      "MarianConsecration.n4vzrc686f.wasm": "MarianConsecration.wasm",
+      "MarianConsecration.2htt7za9ke.wasm": "MarianConsecration.wasm",
       "Microsoft.AspNetCore.Components.Forms.kgikxqovw4.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.zmp6xn0r6h.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.8sfhvwn1u3.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -136,7 +136,7 @@
     },
     "assembly": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
-      "MarianConsecration.n4vzrc686f.wasm": "sha256-V5Nr7LKJvv9aA4XfDRXD4F4Eej+/+2ezwxq9igTHRYo=",
+      "MarianConsecration.2htt7za9ke.wasm": "sha256-du3vDFEEX0AZvLehMdNnVizgm9q0RE0vzMvUNz+Nq3s=",
       "Microsoft.AspNetCore.Components.Forms.kgikxqovw4.wasm": "sha256-dEOU93t+iN5BJuV4yIlcviNKfW2g6aOag0LRHlgSG3I=",
       "Microsoft.AspNetCore.Components.zmp6xn0r6h.wasm": "sha256-SwQCFYdNOO4J5+2/Q40DF/0WOeYesaus9jLacBd1whs=",
       "Microsoft.AspNetCore.Components.Web.8sfhvwn1u3.wasm": "sha256-KBmOf9TqmCUIye6klmJhLPx1nufQdaDH8VX2AuSG8Xo=",
