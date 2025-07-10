@@ -78,6 +78,46 @@ main[b-o67j5gwecd] {
         padding-right: 1.5rem !important;
     }
 }
+/* /Pages/DayNavigation.razor.rz.scp.css */
+/* This CSS file should be named DayNavigation.razor.css and placed next to the component file */
+
+.day-navigation-container[b-bln1qpdug5] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem; /* Adds some space on the sides for larger screens */
+}
+
+.nav-button[b-bln1qpdug5] {
+    /* Ensures buttons have a nice minimum width */
+    min-width: 150px;
+    text-transform: none; /* Prevents text from being all caps */
+}
+
+.nav-placeholder[b-bln1qpdug5] {
+    /* This ensures the layout doesn't jump when a button is hidden */
+    min-width: 150px;
+    display: block;
+}
+
+/* For smaller screens, make buttons take up more available space */
+@media (max-width: 600px) {
+    .day-navigation-container[b-bln1qpdug5] {
+        padding: 0;
+    }
+
+    .nav-button[b-bln1qpdug5] {
+        flex-grow: 1;
+        margin: 0 0.25rem;
+    }
+
+    .nav-placeholder[b-bln1qpdug5] {
+        flex-grow: 1;
+        margin: 0 0.25rem;
+    }
+}
 /* /Pages/Home.razor.rz.scp.css */
 /* Styles for Home.razor - Manual Prayer Calendar Table */
 
