@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-400: #60a5fa;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+}
+
+@layer components {
+  .card {
+    @apply bg-white dark:bg-gray-900 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6;
+  }
+  .prayer-card {
+    @apply bg-blue-50 dark:bg-gray-800/50 rounded-lg p-6;
+  }
+  .scripture-heading {
+    @apply text-blue-700 dark:text-blue-400 text-xl font-semibold;
+  }
+  .page-title {
+    @apply text-2xl font-bold text-blue-700 dark:text-blue-400;
+  }
+  .nav-btn {
+    @apply px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors duration-200;
+  }
+}
