@@ -844,6 +844,11 @@ tailwind.config={darkMode:'class',theme:{extend:{}}}
   <div class="prayer-card mb-4">
     <h3 class="text-xl font-semibold text-blue-700 dark:text-blue-400 mb-3 text-center">12 Day Preparation Prayers</h3>
     <hr class="mb-4 border-gray-200 dark:border-gray-700">
+    <h4 class="font-semibold mb-2">Audio Reading</h4>
+    <audio controls style="width:100%" preload="none">
+      <source src="audio/PreparationPrayers.mp3" type="audio/mpeg">
+    </audio>
+    <hr class="my-4 border-gray-200 dark:border-gray-700">
     <h4 class="font-semibold mb-2">Veni Creator</h4>
     <p>Come, Holy Spirit, Creator blest,<br>and in our souls take up Your rest;<br>come with Your grace and heavenly aid<br>to fill the hearts which You have made.</p>
     <p>O comforter, to You we cry,<br>O heavenly gift of God Most High,<br>O fount of life and fire of love,<br>and sweet anointing from above.</p>
@@ -1019,6 +1024,7 @@ function showView(hash) {
     injectPrayers(el);
     injectDayNav(el, id);
     injectDayDate(el, id);
+    injectDayAudio(el, id);
     injectBackToTop(el);
     window.scrollTo(0, 0);
   } else {
@@ -1075,6 +1081,23 @@ function injectBackToTop(section) {
   btn.className = 'back-to-top text-center mt-8 pt-4 border-t border-gray-200 dark:border-gray-700';
   btn.innerHTML = '<button onclick="window.scrollTo({top:0,behavior:\'smooth\'})" class="px-5 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-xl shadow-md transition-colors duration-200">&uarr; Back to Top</button>';
   section.appendChild(btn);
+}
+
+// ===== DAY AUDIO =====
+function injectDayAudio(section, id) {
+  if (section.querySelector('.day-audio')) return;
+  const match = id.match(/^day(\d+)$/);
+  if (!match) return;
+  const num = parseInt(match[1]);
+  const src = 'audio/Day' + num + '.mp3';
+  const wrapper = document.createElement('div');
+  wrapper.className = 'day-audio mb-4';
+  wrapper.innerHTML = '<div class="card mb-0"><h4 class="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Audio Reading</h4><audio controls style="width:100%" preload="none"><source src="' + src + '" type="audio/mpeg"></audio></div>';
+  // Insert after the date paragraph
+  const dateEl = section.querySelector('.day-date');
+  if (dateEl && dateEl.nextSibling) {
+    section.insertBefore(wrapper, dateEl.nextSibling);
+  }
 }
 
 // ===== CONSECRATION DATE =====
