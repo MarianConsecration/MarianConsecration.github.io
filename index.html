@@ -1090,14 +1090,16 @@ function injectDayAudio(section, id) {
   if (!match) return;
   const num = parseInt(match[1]);
   const src = 'audio/Day' + num + '.mp3';
-  const wrapper = document.createElement('div');
-  wrapper.className = 'day-audio mb-4';
-  wrapper.innerHTML = '<div class="card mb-0"><h4 class="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Audio Reading</h4><audio controls style="width:100%" preload="none"><source src="' + src + '" type="audio/mpeg"></audio></div>';
-  // Insert after the date paragraph
-  const dateEl = section.querySelector('.day-date');
-  if (dateEl && dateEl.nextSibling) {
-    section.insertBefore(wrapper, dateEl.nextSibling);
-  }
+  fetch(src, { method: 'HEAD' }).then(function(resp) {
+    if (!resp.ok || section.querySelector('.day-audio')) return;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'day-audio mb-4';
+    wrapper.innerHTML = '<div class="card mb-0"><h4 class="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Audio Reading</h4><audio controls style="width:100%" preload="none"><source src="' + src + '" type="audio/mpeg"></audio></div>';
+    const dateEl = section.querySelector('.day-date');
+    if (dateEl && dateEl.nextSibling) {
+      section.insertBefore(wrapper, dateEl.nextSibling);
+    }
+  }).catch(function() {});
 }
 
 // ===== CONSECRATION DATE =====
