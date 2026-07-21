@@ -1086,20 +1086,50 @@ function injectBackToTop(section) {
 // ===== DAY AUDIO =====
 function injectDayAudio(section, id) {
   if (section.querySelector('.day-audio')) return;
-  const match = id.match(/^day(\d+)$/);
+  var match = id.match(/^day(\d+)$/);
   if (!match) return;
-  const num = parseInt(match[1]);
-  const src = 'audio/Day' + num + '.mp3';
-  fetch(src, { method: 'HEAD' }).then(function(resp) {
-    if (!resp.ok || section.querySelector('.day-audio')) return;
-    const wrapper = document.createElement('div');
-    wrapper.className = 'day-audio mb-4';
-    wrapper.innerHTML = '<div class="card mb-0"><h4 class="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Audio Reading</h4><audio controls style="width:100%" preload="none"><source src="' + src + '" type="audio/mpeg"></audio></div>';
-    const dateEl = section.querySelector('.day-date');
-    if (dateEl && dateEl.nextSibling) {
-      section.insertBefore(wrapper, dateEl.nextSibling);
-    }
-  }).catch(function() {});
+  var num = parseInt(match[1]);
+  var multiAudio = {
+    13: ['Day13_Theme', 'Day13'],
+    15: ['Day15_1', 'Day15_2'],
+    16: ['Day16_1', 'Day16_2'],
+    17: ['Day17_1', 'Day17_2'],
+    18: ['Day18_1', 'Day18_2'],
+    20: ['Day20_Theme', 'Day20'],
+    27: ['Day27_Theme', 'Day27'],
+    30: ['Day30_1', 'Day30_2'],
+    31: ['Day31_1', 'Day31_2'],
+    32: ['Day32_1', 'Day32_2'],
+    33: ['Day33_1', 'Day33_2']
+  };
+  if (num === 34) return;
+  if (multiAudio[num]) {
+    var files = multiAudio[num];
+    var cards = section.querySelectorAll('.card.mb-4');
+    files.forEach(function(file, i) {
+      var src = 'audio/' + file + '.mp3';
+      fetch(src, { method: 'HEAD' }).then(function(resp) {
+        if (!resp.ok) return;
+        var wrapper = document.createElement('div');
+        wrapper.className = 'day-audio mb-4';
+        var label = (file.indexOf('_Theme') !== -1) ? 'Theme Audio' : 'Audio Reading ' + (i + 1);
+        wrapper.innerHTML = '<div class="card mb-0"><h4 class="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">' + label + '</h4><audio controls style="width:100%" preload="none"><source src="' + src + '" type="audio/mpeg"></audio></div>';
+        if (cards[i]) cards[i].parentNode.insertBefore(wrapper, cards[i]);
+      }).catch(function() {});
+    });
+  } else {
+    var src = 'audio/Day' + num + '.mp3';
+    fetch(src, { method: 'HEAD' }).then(function(resp) {
+      if (!resp.ok || section.querySelector('.day-audio')) return;
+      var wrapper = document.createElement('div');
+      wrapper.className = 'day-audio mb-4';
+      wrapper.innerHTML = '<div class="card mb-0"><h4 class="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Audio Reading</h4><audio controls style="width:100%" preload="none"><source src="' + src + '" type="audio/mpeg"></audio></div>';
+      var dateEl = section.querySelector('.day-date');
+      if (dateEl && dateEl.nextSibling) {
+        section.insertBefore(wrapper, dateEl.nextSibling);
+      }
+    }).catch(function() {});
+  }
 }
 
 // ===== CONSECRATION DATE =====
